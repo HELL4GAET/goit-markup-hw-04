@@ -107,6 +107,8 @@ nav .logo:focus {
   display: flex;
   align-items: center;
   fill: var(--description-text-color);
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .auth-nav {
@@ -267,7 +269,7 @@ nav .logo:focus {
   background: #f5f4fa;
 }
 
-.team-list ul {
+.teamates {
   margin: 0;
   padding: 0;
 }
@@ -398,10 +400,17 @@ nav .logo:focus {
   padding: 0;
 }
 
+.filter-btn .current {
+  color: var(--primary-background-color);
+  background-color: var(--accent-color);
+}
+
 .filter button:hover,
 .filter button:focus {
   color: var(--primary-background-color);
   background-color: var(--accent-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
   outline: none;
 }
 
@@ -464,10 +473,24 @@ nav .logo:focus {
 
 /* карточки портфолио */
 
+.card:hover {
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.card-content {
+  padding: 20px 24px;
+}
+
+.cards-thumb {
+  margin-bottom: 30px;
+}
+
 .card-content {
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
+  background-color: var(--primary-background-color);
 }
 
 .cards {
@@ -479,16 +502,8 @@ nav .logo:focus {
   border-radius: 0px 0px 4px 4px;
 }
 
-.cards-thumb img {
-  margin-bottom: 30px;
-}
-
-.card-content {
-  padding: 20px 24px;
-}
-
 .cards-content {
-  padding-bottom: 30px;
+  margin-bottom: 16px;
 }
 
 /* icons */
@@ -509,7 +524,57 @@ nav .logo:focus {
   justify-content: center;
 }
 
-.contact-icon:hover,
-.contact-icon:focus {
-  full: var(--accent-color);
+/* team icons */
+
+.socials {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+.socials li {
+  margin-right: 10px;
+  padding: 0;
+  /* background-color: #188ce8; */
+  border-radius: 50%;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 30px;
+}
+
+.networks-link {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: #afb1b8;
+}
+
+.socials-links {
+  fill: currentColor;
+}
+
+.networks-link:hover,
+.networks-link:focus {
+  background-color: #188ce8;
+  color: var(--primary-background-color);
+  outline: none;
+}
+
+.socials li:last-child {
+  margin: 0;
+}
+
+/* постоянные клиенты */
+
+.companies {
+  display: flex;
+  flex-wrap: wrap;
 }
