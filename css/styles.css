@@ -629,9 +629,11 @@ nav .logo:focus {
   fill: currentColor;
 }
 
-.company-titles .company-link:hover {
+.company-titles .company-link:hover,
+.company-titles .company-link:focus {
   color: var(--accent-color);
   border: 1px solid var(--accent-color);
+  outline: none;
 }
 
 /* footer links */
