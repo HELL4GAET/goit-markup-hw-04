@@ -657,6 +657,10 @@ nav .logo:focus {
   align-items: center;
   justify-content: center;
   margin: 0;
+  padding-bottom: 30px;
+}
+
+.socials li {
   padding: 0;
 }
 
