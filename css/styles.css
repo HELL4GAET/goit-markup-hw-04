@@ -473,7 +473,12 @@ nav .logo:focus {
 
 /* карточки портфолио */
 
-.card:hover {
+.card {
+  cursor: pointer;
+}
+
+.card:hover,
+.card:focus {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
@@ -574,7 +579,125 @@ nav .logo:focus {
 
 /* постоянные клиенты */
 
+.costumers-title {
+  margin: 0;
+  margin-bottom: 50px;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
 .companies {
+  margin: 0;
+  padding: 0;
   display: flex;
-  flex-wrap: wrap;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.company-titles {
+  margin-right: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.company-titles:last-child {
+  margin: 0;
+}
+
+.company-titles .company-link {
+  display: flex;
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  color: #afb1b8;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  padding: 16px 32px;
+}
+
+.comp-logo {
+  fill: currentColor;
+}
+
+.company-titles .company-link:hover {
+  color: var(--accent-color);
+  border: 1px solid var(--accent-color);
+}
+
+/* footer links */
+
+.soc .join {
+  color: var(--primary-background-color);
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  text-align: start;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.socials {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.socials-footer {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: baseline;
+}
+
+.socials-footer .footer-link {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: var(--primary-background-color);
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.socials-links {
+  fill: currentColor;
+}
+
+.socials-footer li {
+  padding: 0;
+}
+
+.footer-link:hover,
+.footer-link:focus {
+  background-color: #188ce8;
+  color: var(--primary-background-color);
+  outline: none;
+}
+
+.footer-all {
+  display: flex;
+  align-items: baseline;
+}
+
+.footer-contact {
+  margin-right: 70px;
 }
