@@ -506,6 +506,7 @@ nav .logo:focus {
   padding: 0;
   background-color: var(--primary-background-color);
   border-radius: 0px 0px 4px 4px;
+  padding-bottom: 30px;
 }
 
 .cards-content p {
@@ -533,14 +534,6 @@ nav .logo:focus {
 }
 
 /* team icons */
-
-.socials {
-  display: flex;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-  padding: 0;
-}
 
 .socials li {
   margin-right: 10px;
@@ -659,7 +652,7 @@ nav .logo:focus {
   align-items: center;
   justify-content: center;
   margin: 0;
-  padding-bottom: 30px;
+  padding: 0;
 }
 
 .socials li {
